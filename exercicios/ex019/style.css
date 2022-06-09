@@ -1,0 +1,22 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: rgb(205,255,203);
+}
+
+h1 {
+    color: rgb(4,109,0);
+}
+
+h1#principal {
+    text-align: center;
+}
+
+
+h2{
+    color: rgb(73,109,71);
+}
+

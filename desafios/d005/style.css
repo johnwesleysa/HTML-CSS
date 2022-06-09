@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(images]/4d845686128681.5d909dad4ddd3.jpg);
+    width: 100%;
+    left: 100%;
+    right: 100%;
+}
+.perfil {
+    background-color: rgba(56, 10, 163, 0.9);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 1em black;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    right: 30%;
+    padding: 20px;
+}
+.name {
+    position: absolute;
+    top: 20px;
+    left: 170px;
+    right: 20px;
+    font-size: 40px;
+    
+}
+.sobre {
+    position: absolute;
+    top: 10px;
+    top: 90px;
+    left: 170px;
+    right: 20px;
+    
+}
+.myself {
+    float: left;
+    max-width: 150px;
+    max-height: 150px;
+}
+.redes {
+    background-color: rgba(56, 10, 163, 0.9);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 1em black;
+    width: 400px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    left: 49%;
+}
+ul {
+    list-style: none;
+}
+a:link {
+    color: white;
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}

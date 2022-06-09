@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas, áudio e vídeo </title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou tente aumentar e diminuir o tamnho do seu navegador
+    </p>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/300px.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/700px.png" type="image/png">
+        <img src="imagens/1000px.png" alt="imagem flexível">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Ariana Grande - positions</p>
+    <audio src="midia/Ariana Grande - positions (official video).mp3" controls autoplay></audio>
+    <p>Ariana Grande - 34+35</p>
+    <audio controls autoplay preload="metadata">
+        <source src="midia/Ariana Grande - 34+35 (official video).mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não consegue reproduzir esse áudio, clique <a href="midia/Ariana Grande - 34+35 (official video).mp3">AQUI</a> para baixar o mp3</p>
+    </audio>
+    
+
+
+</body>
+</html>
