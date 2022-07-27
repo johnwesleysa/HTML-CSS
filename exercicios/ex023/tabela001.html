@@ -13,16 +13,19 @@
         table {
             border-collapse: collapse;
             width: 400px;
-            text-align: center;
-        }
-
-        tr.linha {
-            background-color: rgb(113, 133, 133);
+            height: 400px;
+            
         }
 
         td {
             border: 1px solid black;
             padding: 8px;
+            text-align: center; 
+            vertical-align:  top;
+        }
+
+        .numero {
+            text-align: right;
         }
 
     </style>
@@ -43,15 +46,15 @@
             <td>B1</td>
             <td>C1</td>
         </tr>
-        <tr class="linha"> <!--Segunda linha-->
+        <tr> <!--Segunda linha-->
             <td>A2</td>
             <td>B2</td>
-            <td>C2</td>
+            <td class="numero">C2</td>
         </tr>
         <tr> <!--Terceira linha-->
             <td>A3</td>
             <td>B3</td>
-            <td>C3</td>
+            <td class="numero">C3</td>
         </tr>
         <tr> <!--Quarta linha-->
             <td>A4</td>

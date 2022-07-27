@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas semanticas</title>
+    <style>
+        div {
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        thead, tfoot {
+            background-color: rgb(3, 77, 138);
+            color: white;
+        }
+
+        th {
+            padding: 8px;
+            border: 1px solid black;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .numero {
+            font-weight: bold;
+        }
+
+        .dedicatoria {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-style: italic;
+            position: absolute;
+              
+        }
+
+    </style>
+</head>
+<body>
+    <!--
+        Anatomia para tabelas grandes
+        TABLE
+            THEADER
+                TD, TR, TH
+            TBODY
+                TD, TR, TH
+            TFOOT
+                TD, TR, TH
+    -->
+
+    <div>
+        <Table>
+            <thead>
+                <tr>
+                    <th>Estado</th>
+                    <th>População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td >São Paulo</td>
+                    <td class="numero">45 919 049</td>
+                </tr>
+                <tr>
+                    <td >Minas Gerais</td>
+                    <td class="numero">21 168 791</td>
+                </tr>
+                <tr>
+                    <td >Rio de Janeiro</td>
+                    <td class="numero">17 264 934</td>
+                </tr>
+                <tr>
+                    <td >Bahia</td>
+                    <td class="numero">14 873 064</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Total de Habitantes</th>
+                    <td class="numero">99.225.838</td>
+                </tr>
+            </tfoot>
+        </Table>
+        <p class="dedicatoria">
+            By, Wikipedia
+        </p>
+    </div>
+    
+</body>
+</html>
