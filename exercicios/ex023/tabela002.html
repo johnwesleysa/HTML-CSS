@@ -8,21 +8,22 @@
     <style>
         div {
             margin: auto;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
         }
         table {
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
             border-collapse: collapse;
             width: 500px;
+            position: relative;
         }
 
         thead, tfoot {
             background-color: rgb(3, 77, 138);
             color: white;
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: orange;
         }
 
         th {
@@ -33,6 +34,11 @@
         td {
             border: 1px solid black;
             padding: 5px;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(3, 77, 138);
         }
 
         .numero {
@@ -64,8 +70,8 @@
         <Table>
             <thead>
                 <tr>
-                    <th>Estado</th>
-                    <th>População</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">População</th>
                 </tr>
             </thead>
             <tbody>
@@ -85,10 +91,139 @@
                     <td >Bahia</td>
                     <td class="numero">14 873 064</td>
                 </tr>
+                <tr>
+                    <td >São Paulo</td>
+                    <td class="numero">45 919 049</td>
+                </tr>
+                <tr>
+                    <td >Minas Gerais</td>
+                    <td class="numero">21 168 791</td>
+                </tr>
+                <tr>
+                    <td >Rio de Janeiro</td>
+                    <td class="numero">17 264 934</td>
+                </tr>
+                <tr>
+                    <td >Bahia</td>
+                    <td class="numero">14 873 064</td>
+                </tr>
+                <tr>
+                    <td >São Paulo</td>
+                    <td class="numero">45 919 049</td>
+                </tr>
+                <tr>
+                    <td >Minas Gerais</td>
+                    <td class="numero">21 168 791</td>
+                </tr>
+                <tr>
+                    <td >Rio de Janeiro</td>
+                    <td class="numero">17 264 934</td>
+                </tr>
+                <tr>
+                    <td >Bahia</td>
+                    <td class="numero">14 873 064</td>
+                </tr>
+                <tr>
+                    <td >São Paulo</td>
+                    <td class="numero">45 919 049</td>
+                </tr>
+                <tr>
+                    <td >Minas Gerais</td>
+                    <td class="numero">21 168 791</td>
+                </tr>
+                <tr>
+                    <td >Rio de Janeiro</td>
+                    <td class="numero">17 264 934</td>
+                </tr>
+                <tr>
+                    <td >Bahia</td>
+                    <td class="numero">14 873 064</td>
+                </tr>
+                <tr>
+                    <td >São Paulo</td>
+                    <td class="numero">45 919 049</td>
+                </tr>
+                <tr>
+                    <td >Minas Gerais</td>
+                    <td class="numero">21 168 791</td>
+                </tr>
+                <tr>
+                    <td >Rio de Janeiro</td>
+                    <td class="numero">17 264 934</td>
+                </tr>
+                <tr>
+                    <td >Bahia</td>
+                    <td class="numero">14 873 064</td>
+                </tr>
+                <tr>
+                    <td >São Paulo</td>
+                    <td class="numero">45 919 049</td>
+                </tr>
+                <tr>
+                    <td >Minas Gerais</td>
+                    <td class="numero">21 168 791</td>
+                </tr>
+                <tr>
+                    <td >Rio de Janeiro</td>
+                    <td class="numero">17 264 934</td>
+                </tr>
+                <tr>
+                    <td >Bahia</td>
+                    <td class="numero">14 873 064</td>
+                </tr>
+                <tr>
+                    <td >São Paulo</td>
+                    <td class="numero">45 919 049</td>
+                </tr>
+                <tr>
+                    <td >Minas Gerais</td>
+                    <td class="numero">21 168 791</td>
+                </tr>
+                <tr>
+                    <td >Rio de Janeiro</td>
+                    <td class="numero">17 264 934</td>
+                </tr>
+                <tr>
+                    <td >Bahia</td>
+                    <td class="numero">14 873 064</td>
+                </tr>
+                <tr>
+                    <td >São Paulo</td>
+                    <td class="numero">45 919 049</td>
+                </tr>
+                <tr>
+                    <td >Minas Gerais</td>
+                    <td class="numero">21 168 791</td>
+                </tr>
+                <tr>
+                    <td >Rio de Janeiro</td>
+                    <td class="numero">17 264 934</td>
+                </tr>
+                <tr>
+                    <td >Bahia</td>
+                    <td class="numero">14 873 064</td>
+                </tr>
+                <tr>
+                    <td >São Paulo</td>
+                    <td class="numero">45 919 049</td>
+                </tr>
+                <tr>
+                    <td >Minas Gerais</td>
+                    <td class="numero">21 168 791</td>
+                </tr>
+                <tr>
+                    <td >Rio de Janeiro</td>
+                    <td class="numero">17 264 934</td>
+                </tr>
+                <tr>
+                    <td >Bahia</td>
+                    <td class="numero">14 873 064</td>
+                </tr>
+
             </tbody>
             <tfoot>
                 <tr>
-                    <th>Total de Habitantes</th>
+                    <th scope="col">Total de Habitantes</th>
                     <td class="numero">99.225.838</td>
                 </tr>
             </tfoot>
@@ -96,6 +231,48 @@
         <p class="dedicatoria">
             By, Wikipedia
         </p>
+        lorem
+        <p>loremn</p>
+        <p>loremn</p>
+        <p>loremn</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquid voluptates autem, dicta est ut molestiae doloremque debitis odio error perferendis molestias quod voluptatibus repellat ducimus eos recusandae? Sunt, quo!lorem
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ea corporis est culpa fuga animi cum aliquam aspernatur labore sint dignissimos quis nobis aliquid incidunt facilis delectus, similique corrupti officiis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eveniet corrupti perspiciatis odit incidunt qui dolores autem consequatur, vel facere unde, quaerat facilis mollitia cum omnis. Iste debitis at ipsum!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae cupiditate odit repudiandae facere, asperiores quam iusto dolorum laborum ullam architecto sunt ipsam laboriosam, alias repellat porro, quaerat aut. Corporis, molestiae?
+        </p>
+        <p>loremn</p>
+        <p>loremn</p>
+        <p>loremn</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquid voluptates autem, dicta est ut molestiae doloremque debitis odio error perferendis molestias quod voluptatibus repellat ducimus eos recusandae? Sunt, quo!lorem
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ea corporis est culpa fuga animi cum aliquam aspernatur labore sint dignissimos quis nobis aliquid incidunt facilis delectus, similique corrupti officiis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eveniet corrupti perspiciatis odit incidunt qui dolores autem consequatur, vel facere unde, quaerat facilis mollitia cum omnis. Iste debitis at ipsum!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae cupiditate odit repudiandae facere, asperiores quam iusto dolorum laborum ullam architecto sunt ipsam laboriosam, alias repellat porro, quaerat aut. Corporis, molestiae?
+        </p>
+        <p>loremn</p>
+        <p>loremn</p>
+        <p>loremn</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquid voluptates autem, dicta est ut molestiae doloremque debitis odio error perferendis molestias quod voluptatibus repellat ducimus eos recusandae? Sunt, quo!lorem
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ea corporis est culpa fuga animi cum aliquam aspernatur labore sint dignissimos quis nobis aliquid incidunt facilis delectus, similique corrupti officiis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eveniet corrupti perspiciatis odit incidunt qui dolores autem consequatur, vel facere unde, quaerat facilis mollitia cum omnis. Iste debitis at ipsum!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae cupiditate odit repudiandae facere, asperiores quam iusto dolorum laborum ullam architecto sunt ipsam laboriosam, alias repellat porro, quaerat aut. Corporis, molestiae?
+        </p>
+        <p>loremn</p>
+        <p>loremn</p>
+        <p>loremn</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquid voluptates autem, dicta est ut molestiae doloremque debitis odio error perferendis molestias quod voluptatibus repellat ducimus eos recusandae? Sunt, quo!lorem
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ea corporis est culpa fuga animi cum aliquam aspernatur labore sint dignissimos quis nobis aliquid incidunt facilis delectus, similique corrupti officiis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eveniet corrupti perspiciatis odit incidunt qui dolores autem consequatur, vel facere unde, quaerat facilis mollitia cum omnis. Iste debitis at ipsum!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae cupiditate odit repudiandae facere, asperiores quam iusto dolorum laborum ullam architecto sunt ipsam laboriosam, alias repellat porro, quaerat aut. Corporis, molestiae?
+        </p>
+        <p>loremn</p>
+        <p>loremn</p>
+        <p>loremn</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquid voluptates autem, dicta est ut molestiae doloremque debitis odio error perferendis molestias quod voluptatibus repellat ducimus eos recusandae? Sunt, quo!lorem
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ea corporis est culpa fuga animi cum aliquam aspernatur labore sint dignissimos quis nobis aliquid incidunt facilis delectus, similique corrupti officiis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eveniet corrupti perspiciatis odit incidunt qui dolores autem consequatur, vel facere unde, quaerat facilis mollitia cum omnis. Iste debitis at ipsum!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae cupiditate odit repudiandae facere, asperiores quam iusto dolorum laborum ullam architecto sunt ipsam laboriosam, alias repellat porro, quaerat aut. Corporis, molestiae?
+        </p>
+
     </div>
     
 </body>
